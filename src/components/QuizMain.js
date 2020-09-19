@@ -7,32 +7,32 @@ export default class Quiz extends Component {
 
     state = {
         questions : {
-            1: "What US city is the birthplace of Jazz?",
-            2: "What is the Capital of Greece",
-            3: "What planet was Superman born?"
+            1: "Which Indian state has a separate Constitution?",
+            2: "LED stands for?",
+            3: "What is the Capital of Karnataka?"
         },
 
         answers: {
             1: {
-                1: 'Chicago',
-                2: 'New Orleans',
-                3: 'New York'
+                1: 'Jammu & Kashmir',
+                2: 'Goa',
+                3: 'Haryana'
             },
             2: {
-                1: 'Athens',
-                2: 'New Delhi',
-                3: 'Patras'
+                1: 'Light Electronic Diode',
+                2: 'Low Emitting Diode',
+                3: 'Light Emitting Diode'
             },
             3: {
-                1: 'Krypton',
-                2: 'Mars',
-                3: 'Earth'
+                1: 'Itanagar',
+                2: 'Bangalore',
+                3: 'Delhi'
             }
         },
         correctAnswers: {
-            1: '2',
-            2: '1',
-            3: '1'
+            1: '1',
+            2: '3',
+            3: '2'
         },
         correctAnswer: 0,
         clickedAnswer: 0,
@@ -91,9 +91,9 @@ export default class Quiz extends Component {
             </>
             ) : (
                 <div className= "finalPage">
-                    <h1>You have Completed the Quiz</h1>
-                    <p>Your score is: {score} of {Object.keys(questions).length}</p>
-                    <p>Thank You!</p>
+                    <p id="res">Your Quiz Result!</p>
+                    <p>Your score is : {score} out of {Object.keys(questions).length}</p>
+                    
                 </div>
             )
             }

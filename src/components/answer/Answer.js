@@ -24,12 +24,12 @@ const Answer = (props) => {
             {answer}
         </ul>
 
-        <div>
+        <div className= "caption">
             {
                 props.correctAnswer ?
-                'Correct Answer!' :
+                <p>Correct Answer!</p> :
                 props.clickedAnswer ?
-                'Incorrect Answer!' : ''
+                <p>Incorrect Answer!</p> : <p></p>
             }
         </div>
         </>

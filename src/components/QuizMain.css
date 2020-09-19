@@ -1,26 +1,41 @@
 .NextStep{
-    background-color: #009e00;
+    background-color: #1b7ced;
     color: #fff;
+    font-size: 15px;
     padding: 10px 30px;
     border: 0;
     border-radius: 3px;
     cursor: pointer;
 }
 .NextStep:hover{
-    background-color: green;
+    background-color: #1870d5;
+    
 }
 
 .NextStep[disabled]{
     display: none;
 }
 
-.finalPage h1{
+.finalPage #res{
     text-align: center;
     margin: 15px 0;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: #008416;
+    color: #fff;
     text-transform: none;
     text-shadow: none;
+    
 }
+
+.finalPage p{
+    color: #f1f3f8;
+    font-size: 18px;
+}
+
+.finalPage{
+    text-align: center;
+}
+
+
+
